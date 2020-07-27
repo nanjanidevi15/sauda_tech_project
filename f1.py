@@ -31,7 +31,7 @@ def message():
    elif(not(validateString(pw))):
       d={"status": 202,"msg": "Failure: password to have 1 character and 1 number"} 
    elif(not(name.isalpha())):
-      d={"status": 203,"msg": "Failure: only characters allowed in username"}  
+      d={"status": 203,"msg": "Failure: only characters allowed in the username"}  
    else:
       d={"status": 200,"msg": "Success"}
    
