@@ -1,9 +1,9 @@
-from flask import Flask,render_template,request,jsonify
+from flask import Flask,render_template,request,jsonify,redirect,url_for
 app = Flask(__name__) 
 
 @app.route('/')
 def hello():
-   return "<h2>Welcome<h2>"
+   return redirect(url_for('login'))
    
 @app.route('/login') 
 def login(): 
