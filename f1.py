@@ -10,7 +10,7 @@ def login():
    return render_template("login.html")
    
   
-@app.route('/message',methods = ['POST']) 
+@app.route('/login',methods = ['POST']) 
 def message():
    name=request.form.get("name")
    pw=request.form.get("password")
